@@ -25,13 +25,13 @@ int main()
             case '/':
                 if (b == 0) 
                 {
-                    cout << "Делитель не может быть нулевым" << endl;
+                    cout << "Zero-div not supported!" << endl;
                     return 0;
                 } 
                 value = a / b;
                 break;
             default:
-                cout << "Неизвестная операция." << endl;
+                cout << "Undefined function." << endl;
         }
         cout << value << endl;
         
