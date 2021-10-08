@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double a, b;
+    char operation;
+    double value;
+    
+    while (true) {
+        cin >> a >> operation >> b;
+        
+        switch (operation) 
+        {
+            case '+':
+                value = a + b;
+                break;
+            case '-':
+                value = a - b;
+                break;
+            case '*':
+                value = a * b;
+                break;
+            case '/':
+                if (b == 0) 
+                {
+                    cout << "Делитель не может быть нулевым" << endl;
+                    return 0;
+                } 
+                value = a / b;
+                break;
+            default:
+                cout << "Неизвестная операция." << endl;
+        }
+        cout << value << endl;
+        
+    }
+    return 0;
+}
